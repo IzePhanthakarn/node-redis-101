@@ -1,0 +1,11 @@
+### without redis
+GET http://localhost:3000 HTTP/1.1
+Content-Type: application/json
+
+### with redis
+GET http://localhost:3000/redis/?username=jimmy HTTP/1.1
+Content-Type: application/json
+
+### clear data in redis
+GET http://localhost:3000/redis/clear/?username=jimmy HTTP/1.1
+Content-Type: application/json
